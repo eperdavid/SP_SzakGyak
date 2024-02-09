@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="nav">
         <div class="nav-text">
             <div class="img-title">
@@ -18,14 +19,17 @@
 
             </div>
 
+            <i id="dark-mode-btn" class="fa-solid fa-moon fa-xl"></i>
+
             <div class="language">
                 <a class="selectedLang">Srpski</a>
                 <a>English</a>
                 <a>Magyar</a>
             </div>
+            <i id="hamburger" class="fa-solid fa-bars fa-xl" onclick="resNav()"></i>
         </div>
     </div>
-    <nav>
+    <nav id="navBar">
         <div class="nav-links">
             <a href="#">
                 <h3>O NAMA</h3>
@@ -56,16 +60,40 @@
                 <h3>NOVOSTI</h3>
                 <span>aktuelnosti</span>
             </a>
-
+            
             <a href="#">
                 <h3>KONTAKT</h3>
                 <span>kontaktirajte nas</span>
             </a>
+            
+            <div class="resLanguage">
+                <hr style="width: 80%;">
+                <a class="selectedLang">Srpski</a>
+                <a>English</a>
+                <a>Magyar</a>
+            </div>
         </div>
     </nav>
 
     <div class="vid">
-        <img class="video" src="img/Video.png">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img class="video" src="img/Video.png">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="video" src="img/Video.png">
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+            
+        
     </div>
 
     <div class="dvg">
@@ -93,7 +121,7 @@
         </div>
     </div>
 
-    <img src="img/Placeholder.png" width="100%">
+    <div class="paralaxImg"></div>
 
     <div class="upperCards">
         <div class="card">
@@ -308,7 +336,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="slider.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>
